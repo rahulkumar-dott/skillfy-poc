@@ -1,0 +1,25 @@
+# Secrets
+.env
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Video/audio inputs and outputs - not committed, see README.md
+input/
+output/
+*.mp4
+*.wav
+*.mp3
+
+# Generated pipeline artifacts (transcripts, per-segment audio, timing data)
+*_segments/
+*_segments.json
+*_source.wav
+*_reference.wav
+*_dubbed.wav
+
+# Run logs / ad-hoc debug output
+*.log
+detached_load_test.*

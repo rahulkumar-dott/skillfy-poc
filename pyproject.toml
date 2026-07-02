@@ -1,0 +1,23 @@
+[project]
+name = "skillfy-dubbing-poc"
+version = "0.1.0"
+description = "Feature 3 POC: multilingual AI dubbing (cloud + local pipelines)"
+requires-python = ">=3.11"
+dependencies = [
+    "requests",
+    "python-dotenv",
+]
+
+[project.optional-dependencies]
+local = [
+    "torch",
+    "transformers",
+    "faster-whisper",
+    "chatterbox-tts",
+    "f5-tts",
+    "imageio-ffmpeg",
+    "kokoro>=0.9.2",
+    "pydub",
+    "sentencepiece",
+    "soundfile",
+]

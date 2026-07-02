@@ -1,0 +1,15 @@
+torch
+transformers
+faster-whisper
+chatterbox-tts
+f5-tts
+imageio-ffmpeg
+kokoro>=0.9.2
+pydub
+sentencepiece
+soundfile
+
+# NOT included above: parler-tts (needed only for experiments/indic_parler_tts_dub_poc.py).
+# It hard-pins transformers==4.46.1, which conflicts with chatterbox-tts's
+# transformers==4.46.3/5.2.0 requirement - install it separately in its own
+# environment if you want to run that specific experiment.
